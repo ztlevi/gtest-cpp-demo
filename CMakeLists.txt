@@ -4,6 +4,8 @@ project(my_project)
 # GoogleTest requires at least C++11
 set(CMAKE_CXX_STANDARD 11)
 
+add_compile_options(-DCMAKE_EXPORT_COMPILE_COMMANDS=YES)
+
 include(FetchContent)
 FetchContent_Declare(
   googletest
