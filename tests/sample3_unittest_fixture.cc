@@ -67,6 +67,10 @@ namespace {
 class QueueTestSmpl3 : public testing::Test {
  protected:  // You should make the members protected s.t. they can be
              // accessed from sub-classes.
+  // Declares the variables your tests want to use.
+  Queue<int> q0_;
+  Queue<int> q1_;
+  Queue<int> q2_;
 
   // virtual void SetUp() will be called before each test is run.  You
   // should define it if you need to initialize the variables.
@@ -107,10 +111,6 @@ class QueueTestSmpl3 : public testing::Test {
     delete new_q;
   }
 
-  // Declares the variables your tests want to use.
-  Queue<int> q0_;
-  Queue<int> q1_;
-  Queue<int> q2_;
 };
 
 // When you have a test fixture, you define a test using TEST_F

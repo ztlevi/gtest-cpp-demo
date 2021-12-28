@@ -12,7 +12,7 @@ add_executable(sample2_unittest sample2_unittest.cc)
 target_link_libraries(sample2_unittest gtest_main Sample)
 gtest_discover_tests(sample2_unittest)
 
-add_executable(sample3_unittest sample3_unittest.cc)
+add_executable(sample3_unittest sample3_unittest_fixture.cc)
 target_link_libraries(sample3_unittest gtest_main Sample)
 gtest_discover_tests(sample3_unittest)
 
@@ -20,7 +20,7 @@ add_executable(sample4_unittest sample4_unittest.cc)
 target_link_libraries(sample4_unittest gtest_main Sample)
 gtest_discover_tests(sample4_unittest)
 
-add_executable(sample5_unittest sample5_unittest.cc)
+add_executable(sample5_unittest sample5_unittest_fixture.cc)
 target_link_libraries(sample5_unittest gtest_main Sample)
 gtest_discover_tests(sample5_unittest)
 
