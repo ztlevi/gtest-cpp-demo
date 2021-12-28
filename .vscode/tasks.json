@@ -5,7 +5,7 @@
       "label": "cmake build",
       "type": "shell",
       "command": "cmake",
-      "args": [ "--build", "build", "--config", "Debug", "--target", "all", "-j", "14", "--" ]
+      "args": ["--build", "build", "--config", "Debug", "--target", "all", "-j", "14", "--"]
     }
   ]
 }
