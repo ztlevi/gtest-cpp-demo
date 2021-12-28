@@ -1,13 +1,15 @@
 # GoogleTest
 
-## Buile
-``` sh
-cmake -S . -B cmake-build-debug
-cmake --build cmake-build-debug
+## Build
+
+```sh
+cmake -S . -B build
 ln -s -f cmake-build-debug/compile_commands.json
+cmake --build build --config Debug --target all -j 14 --
 ```
 
 ## Test example
-``` sh
+
+```sh
 lldb -S tests/.lldb-sample1
 ```
