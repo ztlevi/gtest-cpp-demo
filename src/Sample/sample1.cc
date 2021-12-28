@@ -30,6 +30,7 @@
 // A sample program demonstrating using Google C++ testing framework.
 
 #include "sample1.h"
+#include <iostream>
 
 // Returns n! (the factorial of n).  For negative n, n! is defined to be 1.
 int Factorial(int n) {

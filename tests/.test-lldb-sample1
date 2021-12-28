@@ -1,0 +1,6 @@
+file cmake-build-debug/tests/sample1_unittest
+b sample1.cc : 41
+b Factorial(int)
+b sample1_unittest.cc : 79
+
+run
