@@ -7,9 +7,9 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Sample1 Unittest Debug",
-      "program": "${workspaceFolder}/build/tests/sample5_unittest",
-      "args": [],
+      "name": "Sample6 Unittest Debug",
+      "program": "${workspaceFolder}/build/tests/sample10_unittest",
+      "args": ["--check_for_leaks"],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "cmake build"
     },

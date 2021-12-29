@@ -24,22 +24,22 @@ add_executable(sample5_unittest sample5_unittest_fixture.cc)
 target_link_libraries(sample5_unittest gtest_main Sample)
 gtest_discover_tests(sample5_unittest)
 
-add_executable(sample6_unittest sample6_unittest.cc)
+add_executable(sample6_unittest sample6_unittest_template_with_typed.cc)
 target_link_libraries(sample6_unittest gtest_main Sample)
 gtest_discover_tests(sample6_unittest)
 
-add_executable(sample7_unittest sample7_unittest.cc)
+add_executable(sample7_unittest sample7_unittest_test_with_param.cc)
 target_link_libraries(sample7_unittest gtest_main Sample)
 gtest_discover_tests(sample7_unittest)
 
-add_executable(sample8_unittest sample8_unittest.cc)
+add_executable(sample8_unittest sample8_unittest_test_with_tuple_param.cc)
 target_link_libraries(sample8_unittest gtest_main Sample)
 gtest_discover_tests(sample8_unittest)
 
-add_executable(sample9_unittest sample9_unittest.cc)
+add_executable(sample9_unittest sample9_unittest_test_listener.cc)
 target_link_libraries(sample9_unittest gtest_main Sample)
 gtest_discover_tests(sample9_unittest)
 
-add_executable(sample10_unittest sample10_unittest.cc)
+add_executable(sample10_unittest sample10_unittest_listener_with_leak_checker.cc)
 target_link_libraries(sample10_unittest gtest_main Sample)
 gtest_discover_tests(sample10_unittest)
