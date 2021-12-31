@@ -21,3 +21,9 @@ cd build && ctest -j14 -C Debug -T test --output-on-failure
 ```sh
 lldb -S tests/.lldb-sample1
 ```
+
+Run specific test
+
+```sh
+./build/tests/sample1_unittest --gtest_filter=FactorialTest.*
+```
