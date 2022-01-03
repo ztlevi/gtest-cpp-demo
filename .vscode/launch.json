@@ -14,7 +14,7 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "lldb",
+      "MIMode": "lldb", // Use gdb on Linux
       // For emacs dap-mode https://github.com/emacs-lsp/dap-mode/blob/eda32995c3208bb41879b9302afb0f32d3b7adf0/docs/page/features.md#compiling-the-project-before-debugging
       "dap-compilation": "cmake --build build --config Debug --target all -j 14 --",
       // For vscode tasks
