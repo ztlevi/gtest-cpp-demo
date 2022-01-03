@@ -5,16 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Sample6 Unittest Debug",
-      "program": "${workspaceFolder}/build/tests/sample10_unittest",
-      "args": ["--check_for_leaks"],
-      "cwd": "${workspaceFolder}",
-      "preLaunchTask": "cmake build"
-    },
-    {
-      "name": "Dap Sample1 Unittest Debug",
+      "name": "Sample1 Unittest Debug",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/tests/sample1_unittest",
@@ -23,7 +14,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "lldb"
+      "MIMode": "lldb",
+      // For emacs dap-mode https://github.com/emacs-lsp/dap-mode/blob/eda32995c3208bb41879b9302afb0f32d3b7adf0/docs/page/features.md#compiling-the-project-before-debugging
+      "dap-compilation": "cmake --build build --config Debug --target all -j 14 --",
+      // For vscode tasks
+      "preLaunchTask": "cmake build"
     }
   ]
 }
