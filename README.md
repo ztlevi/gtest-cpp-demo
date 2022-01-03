@@ -27,3 +27,6 @@ Run specific test
 ```sh
 ./build/tests/sample1_unittest --gtest_filter=FactorialTest.*
 ```
+
+# CXX emacs lsp and dap setup
+https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
