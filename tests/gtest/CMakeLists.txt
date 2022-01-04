@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 3.14)
+project(my_project)
+
+# GoogleTest requires at least C++11
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(sample1_unittest sample1_unittest.cc)
+target_link_libraries(sample1_unittest gtest_main Sample)
+gtest_discover_tests(sample1_unittest)
+
+add_executable(sample2_unittest sample2_unittest.cc)
+target_link_libraries(sample2_unittest gtest_main Sample)
+gtest_discover_tests(sample2_unittest)
+
+add_executable(sample3_unittest sample3_unittest_fixture.cc)
+target_link_libraries(sample3_unittest gtest_main Sample)
+gtest_discover_tests(sample3_unittest)
+
+add_executable(sample4_unittest sample4_unittest.cc)
+target_link_libraries(sample4_unittest gtest_main Sample)
+gtest_discover_tests(sample4_unittest)
+
+add_executable(sample5_unittest sample5_unittest_fixture.cc)
+target_link_libraries(sample5_unittest gtest_main Sample)
+gtest_discover_tests(sample5_unittest)
+
+add_executable(sample6_unittest sample6_unittest_template_with_typed.cc)
+target_link_libraries(sample6_unittest gtest_main Sample)
+gtest_discover_tests(sample6_unittest)
+
+add_executable(sample7_unittest sample7_unittest_test_with_param.cc)
+target_link_libraries(sample7_unittest gtest_main Sample)
+gtest_discover_tests(sample7_unittest)
+
+add_executable(sample8_unittest sample8_unittest_test_with_tuple_param.cc)
+target_link_libraries(sample8_unittest gtest_main Sample)
+gtest_discover_tests(sample8_unittest)
+
+add_executable(sample9_unittest sample9_unittest_test_listener.cc)
+target_link_libraries(sample9_unittest gtest_main Sample)
+gtest_discover_tests(sample9_unittest)
+
+add_executable(sample10_unittest sample10_unittest_listener_with_leak_checker.cc)
+target_link_libraries(sample10_unittest gtest_main Sample)
+gtest_discover_tests(sample10_unittest)
