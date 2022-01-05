@@ -8,7 +8,7 @@
       "name": "Sample1 Unittest Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/tests/mock_turtle_test",
+      "program": "${workspaceFolder}/build/tests/gtest/sample1_unittest",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
