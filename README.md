@@ -19,7 +19,7 @@ cd build && ctest -j14 -C Debug -T test --output-on-failure
 - with lldb
 
 ```sh
-lldb -S tests/.lldb-sample1
+lldb -S tests/gtest/.test-lldb-sample1
 ```
 
 Run specific test
