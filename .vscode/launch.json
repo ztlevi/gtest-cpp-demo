@@ -5,8 +5,8 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Sample1 Unittest Debug 2",
-      // note for vscode, type is lldb
+      "name": "Sample1 Unittest Debug",
+      // note for emacs dap-mode, the type is codelldb https://github.com/emacs-lsp/dap-mode/issues/467
       "type": "codelldb",
       "request": "launch",
       "program": "${workspaceFolder}/build/tests/gtest/sample1_unittest",
